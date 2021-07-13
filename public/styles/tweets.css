@@ -32,8 +32,15 @@
   display: flex;
   justify-content: space-between;
   font-size: 25px;
+  width: 160px;
   border: yellow 2px solid;
 }
+
+#pic {
+  height: 50px;
+  width: 50px;
+}
+
 
 .username {
   align-items: center;
