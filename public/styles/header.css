@@ -9,6 +9,7 @@
   background-color: #e09d16;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  margin-top: 120px;
 }
 
 #header .pfp {
