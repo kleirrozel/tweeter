@@ -23,6 +23,7 @@
   align-items: center;
   display: flex;
   font-size: 25px;
+  justify-content: space-between;
   border: fuchsia 2px solid;
 }
 
@@ -31,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 25px;
-  justify-content: flex-start;
+  border: yellow 2px solid;
 }
 
 .username {
@@ -39,6 +40,7 @@
   color: #adcae6;
   display: flex;
   font-size: 25px;
+  font-weight: 400;
 }
 
 .tweet {
