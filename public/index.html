@@ -18,6 +18,9 @@
      
     <!-- New Tweets CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    
+    <!-- Tweets CSS -->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -74,21 +77,25 @@
       </section>
 
       <!-- TWEET CONTAINER: (Inside Main Container) -->
-      <section class="new-tweet">
-        <article>
-          <div>
-            <!-- ICON HERE -->
-            <p>Elvis Bun</p>
-            <p>@BunanaButt</p>
+      <section id="all-tweets">
+        <article class="tweet-container">
+          <div class="user-details">
+            <p class="pic-and-name">
+              <img src="/images/avatar-user.png" style="width: 50px; height: 50px;">
+              <p>Elvis Bun</p>
+            </p>
+            <p class="username">@BunanaButt</p>
           </div>
-          <div>
-            <p>I want a treat!</p>
+          <div class="tweet">
+            <p>Give me all the bananas.</p>
           </div>
-          <div>
+          <div class="tweet-details">
             <p>1 min ago</p>
-            <!-- FLAG ICON -->
-            <!-- RT ICON -->
-            <!-- FAVE ICON -->
+            <p class="icons">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </p>
           </div>
 
 
