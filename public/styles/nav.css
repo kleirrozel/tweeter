@@ -3,11 +3,12 @@
   display: flex;
   flex-direction: row;
   height: 120px;
-  width: auto;
+  width: 100%;
   justify-content: space-between;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  position: relative;
+  position: fixed;
+  top: 0;
 }
 
 #nav-bar .header {
