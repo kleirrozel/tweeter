@@ -1,7 +1,7 @@
 #all-tweets {
   display: flex;
   flex-direction: column;
-  border: red 2px solid;
+  /* border: red 2px solid; */
   padding-top: 2em;
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   font-size: 25px;
   justify-content: space-between;
-  border: fuchsia 2px solid;
+  /* border: fuchsia 2px solid; */
 }
 
 .pic-and-name {
@@ -33,7 +33,7 @@
   justify-content: space-between;
   font-size: 25px;
   width: 160px;
-  border: yellow 2px solid;
+  /* border: yellow 2px solid; */
 }
 
 #pic {
@@ -60,7 +60,7 @@
   display: flex;
   font-size: 18px;
   justify-content: space-between;
-  border: cyan 2px solid;
+  /* border: cyan 2px solid; */
 }
 
 .fas {
