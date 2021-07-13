@@ -16,13 +16,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2em;
 }
 
 #header .profile-details {
   width: 100%;
+  height:fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #FFFF;
 }
