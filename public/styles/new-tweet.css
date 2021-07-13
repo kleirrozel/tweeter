@@ -1,6 +1,13 @@
-#container .new-tweet {
+.new-tweet {
   display: flex;
   flex-direction: column;
+}
+
+.tweet-prompt {
+  display: flex;
+  margin-top: .55em;
+  margin-bottom: .1em;
+
 }
 
 .tweet-area-container {
@@ -8,24 +15,30 @@
   flex-direction: column;
 }
 
-.tweet-area {
+textarea {
   background-color: transparent;
   border: none;
-  resize: none;
-  outline: none;
   border-bottom: #545149 5px solid;
+  outline: none;
+  padding-top: .25em;
+  resize: none;
 }
 
 .send-tweet {
+  align-items: center;
   display: flex;
+  font-family: 'Bungee', sans-serif;
   justify-content: space-between;
   padding-top: .5em;
-  font-family: 'Bungee', sans-serif;
 }
 
 .send-tweet button{
-  display: flex;
-  justify-content: space-between;
   color: #FFFF;
   background-color: #4056A1;
+  display: flex;
+  justify-content: space-between;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .25em;
+  padding-bottom: .25em;
 }
