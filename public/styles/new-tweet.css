@@ -19,6 +19,7 @@ textarea {
   background-color: transparent;
   border: none;
   border-bottom: #545149 5px solid;
+  height: 100px;
   outline: none;
   padding-top: .25em;
   resize: none;
