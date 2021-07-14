@@ -32,7 +32,6 @@
   justify-content: space-between;
   font-size: 25px;
   width: 160px;
-  /* border: yellow 2px solid; */
 }
 
 #pic {
@@ -40,10 +39,9 @@
   width: 50px;
 }
 
-
 .username {
   align-items: center;
-  color: #adcae6;
+  color: #82b5db;
   display: flex;
   font-size: 25px;
   font-weight: 400;
