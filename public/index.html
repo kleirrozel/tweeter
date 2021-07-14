@@ -27,6 +27,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/form.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- Font -->
@@ -68,15 +69,15 @@
       <!-- COMPOSE TWEET SECTION: Compose Tweet to Send Tweet/Character Counter + Main Container -->
       <section class="new-tweet">
         <h3 class="tweet-prompt">Compose Tweet</h3>
-          <form method="POST" action="/tweets">
-            <div class="tweet-area-container">
-              <textarea id="text" name="text" placeholder="What are you humming about?"></textarea>
-            </div>
-            <div class="send-tweet">
-              <button type="submit"><span>Tweet</span></button>
-              <output name="counter" class="counter" for="tweet-text">140</output>
-            </div>
-          </form>
+        <form method="POST" action="/tweets">
+          <div class="tweet-area-container">
+            <textarea id="text" name="text" placeholder="What are you humming about?"></textarea>
+          </div>
+          <div class="send-tweet">
+            <button type="submit"><span>Tweet</span></button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
       </section>
 
       <!-- TWEET CONTAINER: (article is in client js for it to be dynamic) -->
