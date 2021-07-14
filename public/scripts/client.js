@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-
   // Test / driver code (temporary). Eventually will get this from the server.
   const tweetData = [
     {
@@ -29,11 +28,11 @@ $(document).ready(function() {
         "text": "Je pense , donc je suis"
       },
       "created_at": 1461113959088
-      }
-  ]
+    }
+  ];
 
   /* Takes in a tweet object and is responsible
-  for returning a tweet <article> element 
+  for returning a tweet <article> element
   containing the entire HTML structure of the tweet */
   const createTweetElement = (tweetData) => {
     const $tweet = $(`
@@ -57,23 +56,22 @@ $(document).ready(function() {
             </p>
           </footer>
         </article>
-    `)
+    `);
     return $tweet;
   };
 
 
-  /* responsible for taking in an array of tweet objects 
+  /* Responsible for taking in an array of tweet objects
   and then appending each one to the #tweets-container */
   const renderTweets = (tweets) => {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the .tweet-container
     tweetData.forEach((user, index) => {
-      $("#all-tweets").prepend(createTweetElement(user)); 
+      $("#all-tweets").prepend(createTweetElement(user));
       // Changed append to prepend so that new tweets will be added to the top instead of down the list
-    })
+    });
   };
   
   renderTweets(tweetData);
 });
-
