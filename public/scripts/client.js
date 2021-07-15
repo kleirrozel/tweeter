@@ -4,33 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
-  // Test / driver code (temporary). Eventually will get this from the server.
-  const tweetData = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ];
-
   /* Takes in a tweet object and is responsible
   for returning a tweet <article> element
   containing the entire HTML structure of the tweet */
@@ -64,14 +37,26 @@ $(document).ready(function() {
   /* Responsible for taking in an array of tweet objects
   and then appending each one to the #tweets-container */
   const renderTweets = (tweets) => {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the .tweet-container
-    tweetData.forEach((user, index) => {
+    tweets.forEach((user, index) => {
+      console.log(user)
       $("#all-tweets").prepend(createTweetElement(user));
       // Changed append to prepend so that new tweets will be added to the top instead of down the list
     });
   };
   
-  renderTweets(tweetData);
+  // renderTweets(tweetData); // Removed because tweets will be loaded dynamically through the API
+
+
+  /* Responsible for fetching tweets 
+  from the http://localhost:8080/tweets page.
+  -- It should be requesting and handling 
+  a JSON response instead of an HTML response */ 
+  const loadTweets = () => {
+    $.getJSON("/tweets", function(data) {
+      renderTweets(data);
+      console.log(data);
+    })
+  };
+
+  loadTweets();
 });
