@@ -67,11 +67,17 @@
     <main id="container">
       <!-- COMPOSE TWEET SECTION: Compose Tweet to Send Tweet/Character Counter + Main Container -->
       <section class="new-tweet">
-        <h3 class="tweet-prompt">Compose Tweet</h3>
+        <h3 class="tweet-prompt">Bah-HumBug!</h3>
+        <!-- Tweet Area -- Type Tweets Here -->
         <form id="form-id" method="POST" action="/tweets">
           <div class="tweet-area-container">
             <textarea id="text" name="text" placeholder="What are you humming about?"></textarea>
           </div>
+          <!-- Error message container -->
+          <div class="error-message">
+            <span class="error-text"></span>
+          </div>
+          <!-- Submit Tweet Button and Character Counter -->
           <div class="send-tweet">
             <button type="submit"><span>Tweet</span></button>
             <output name="counter" class="counter" for="tweet-text">140</output>
