@@ -1,7 +1,7 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  
+  border:blue 2px solid;
 }
 
 .tweet-prompt {
@@ -64,4 +64,16 @@ textarea {
   padding-right: .5em;
   padding-top: .25em;
   padding-bottom: .25em;
+}
+
+/* Desktop Version */
+@media only screen and (min-width: 96em){
+  .new-tweet {
+    float: right;
+    flex-wrap: wrap;
+    position: sticky;
+    margin-top: 7.5em;
+    margin-left: 20em;
+    min-width: 40em;
+  }
 }

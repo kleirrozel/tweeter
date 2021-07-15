@@ -16,7 +16,7 @@
 .tweet-container:hover {
   display: flex;
   flex-direction: column;
-  box-shadow:#adcae6 5px 5px;
+  box-shadow:#adcae6 0.25em 0.25em;
 }
 
 .user-details {
@@ -49,13 +49,13 @@
 
 .tweet {
   border-bottom: #545149 5px solid;
-  padding-left: .5em;
+  padding-left: .2em;
 }
 
 .tweet-details {
   align-items: center;
   display: flex;
-  font-size: 18px;
+  font-size: .95em;
   justify-content: space-between;
 }
 
@@ -69,4 +69,18 @@
 
 .fas:hover {
   color: #daa520;
+}
+
+/* Desktop Version */
+@media only screen and (min-width: 96em){
+  #all-tweets {
+    float: right;
+    float: right;
+    flex-wrap: wrap;
+    position: sticky;
+    margin-left: 20em;
+    min-width: 40em;
+    position: relative;
+    border:chartreuse 2px solid;
+  }
 }
