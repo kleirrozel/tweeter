@@ -1,6 +1,7 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
+  
 }
 
 .tweet-prompt {
@@ -24,6 +25,13 @@ textarea {
   padding-top: .25em;
   resize: none;
 }
+
+/* .error-message {
+  background-color: #cc3b3b;
+  color: #FFFF;
+  height: auto;
+  padding: .10em;
+} */
 
 .send-tweet {
   align-items: center;
