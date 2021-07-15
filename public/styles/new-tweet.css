@@ -26,12 +26,11 @@ textarea {
   resize: none;
 }
 
-/* .error-message {
-  background-color: #cc3b3b;
+.error-message {
   color: #FFFF;
   height: auto;
   padding: .10em;
-} */
+}
 
 .send-tweet {
   align-items: center;
