@@ -1,6 +1,5 @@
 #header {
   height: 400px;
-  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +7,6 @@
   position: relative;
   background-color: #e09d16;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-top: 120px;
 }
 
@@ -22,9 +20,21 @@
 
 #header .profile-details {
   width: 100%;
-  height:fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #FFFF;
+}
+
+/* Desktop Version */
+@media only screen and (min-width: 1025px){
+  #header {
+    float: left;
+    margin-left: 1.5em;
+    margin-top: 7.5em;
+    height: 17em;
+    width: 17em;
+    overflow: hidden;
+    position: fixed;
+  }
 }
