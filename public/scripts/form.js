@@ -3,14 +3,20 @@ prevents the default behaviours: data submission & page refresh.
 Create an AJAX post request that sends the serialized data to the server to the server.
  */
 $(document).ready(function() {
-  $(".new-tweet").children("form").submit(function(event) {
+  $("#form-id").submit(function(event) {
     event.preventDefault();
-
     const $form = $(this).serialize();
-    
-    $.post("/tweets", $form).done(function() {
-      // // Do something after receiving the tweets
-      // console.log("Successfully submitted")
-    })
+
+    // console.log("THIS IS THE NEW CL:", $("#text").val().length)
+    // console.log(event.target.text.value);
+    if ($("#text").val().length > 140) {
+      return alert("Yikes! You hummed too much. Try humming a little less.");
+    } else if ($("#text").val().length === 0) {
+      return alert("I hear nothing. Type to start humming.");
+    } else {
+      $.post("/tweets", $form).done(function() {
+        // console.log("I want to see this in the console when a form is successfully submitted")
+      })
+    }
   });
 });
