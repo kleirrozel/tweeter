@@ -4,6 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function() {
+  /* Prevents XSS with escaping using a function */ 
+  const escape = (str) => {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
+
   /* Takes in a tweet object and is responsible
   for returning a tweet <article> element
   containing the entire HTML structure of the tweet */
@@ -18,7 +26,7 @@ $(document).ready(function() {
             <p class="username">${tweetData.user.handle}</p>
           </header>
           <div class="tweet">
-            <p>${tweetData.content.text}</p>
+            <p>${escape(tweetData.content.text)}</p>
           </div>
           <footer class="tweet-details">
             <p>${timeago.format(tweetData.created_at)}</p>
@@ -61,8 +69,7 @@ $(document).ready(function() {
 
 /* Add an event listener that listens for the *submit* event and
 prevents the default behaviours: data submission & page refresh.
-Create an AJAX post request that sends the serialized data to the server to the server.
-*/
+Create an AJAX post request that sends the serialized data to the server. */
   $("#form-id").submit(function(event) {
     event.preventDefault();
     const $form = $(this).serialize();
