@@ -1,7 +1,6 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  border:blue 2px solid;
 }
 
 .tweet-prompt {
