@@ -76,11 +76,10 @@ Create an AJAX post request that sends the serialized data to the server. */
 
     // console.log("THIS IS THE NEW CL:", $("#text").val().length)
     if ($("#text").val().length > 140) {
-      $(".error-message").css("color", "#cc3b3b").text("That's too much humming! Maybe tone it down a litte?").slideDown(); // THIS SHOWS UP UNDER THE FORM! Not even disappearing.
-      // return alert("Yikes! You hummed too much. Try humming a little less.");
+      $(".error-message").css("background-color", "#cc3b3b").text("That's too much humming! Maybe tone it down a litte?").slideDown("slow").delay(1500).slideUp("slow");
     } else if ($("#text").val().length === 0) {
-      $(".error-message").css("color", "#cc3b3b").text("I hear nothing but the wind. Type to start humming.").slideDown();
-      // return alert("I hear nothing. Type to start humming.");
+      $(".error-message").css("background-color", "#cc3b3b").text("I hear nothing but the wind. Type to start humming.").slideDown("slow").delay(1500).slideUp("slow");
+      
     } else {
       $.post("/tweets", $form).done(function() {
         
@@ -88,5 +87,6 @@ Create an AJAX post request that sends the serialized data to the server. */
       })
     }
   });
+  
   loadTweets();
 });
