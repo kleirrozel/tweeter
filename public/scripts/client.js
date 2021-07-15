@@ -47,6 +47,18 @@ $(document).ready(function() {
   // renderTweets(tweetData); // Removed because tweets will be loaded dynamically through the API
 
 
+/* Responsible for fetching tweets from the /tweets page.
+  -- It should be requesting and handling 
+  a JSON response instead of an HTML response */ 
+  const loadTweets = () => {
+    $.getJSON("/tweets", function(data) {
+      $("#all-tweets").empty();
+      renderTweets(data);
+      // console.log(data);
+    })
+  };
+
+
 /* Add an event listener that listens for the *submit* event and
 prevents the default behaviours: data submission & page refresh.
 Create an AJAX post request that sends the serialized data to the server to the server.
@@ -62,21 +74,9 @@ Create an AJAX post request that sends the serialized data to the server to the 
       return alert("I hear nothing. Type to start humming.");
     } else {
       $.post("/tweets", $form).done(function() {
-        // console.log("I want to see this in the console when a form is successfully submitted")
+        loadTweets();
       })
     }
   });
-
-  /* Responsible for fetching tweets 
-  from the http://localhost:8080/tweets page.
-  -- It should be requesting and handling 
-  a JSON response instead of an HTML response */ 
-  const loadTweets = () => {
-    $.getJSON("/tweets", function(data) {
-      renderTweets(data);
-      console.log(data);
-    })
-  };
-
   loadTweets();
 });
