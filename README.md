@@ -21,7 +21,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Screenshot of Tweets - Desktop Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/desktop-version.png?raw=true)
 
-!["Screenshot of Tweets - Smaller Screen Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/smaller-screen.png?raw=true)
+!["Screenshot of Tweets - Smaller Screen Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/smaller-screen-version.png?raw=true)
 
 !["Screenshot of Error - Over Character Limit"](https://github.com/kleirrozel/tweeter/blob/master/docs/over-limit.png?raw=true)
 
