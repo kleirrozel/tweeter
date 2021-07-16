@@ -74,12 +74,20 @@
 /* Desktop Version */
 @media only screen and (min-width: 96em){
   #all-tweets {
-    float: right;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    position: sticky;
     margin-left: 20em;
     min-width: 40em;
     position: relative;
+  }
+
+  .tweet-container {
+    display: flex;
+    flex-direction: column;
+    border: #545149 5px solid;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-bottom: 1em;
   }
 }
