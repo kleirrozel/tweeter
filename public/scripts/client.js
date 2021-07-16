@@ -11,7 +11,6 @@ $(document).ready(function() {
     return div.innerHTML;
   }
 
-
   /* Takes in a tweet object and is responsible
   for returning a tweet <article> element
   containing the entire HTML structure of the tweet */
@@ -41,7 +40,6 @@ $(document).ready(function() {
     return $tweet;
   };
 
-
   /* Responsible for taking in an array of tweet objects
   and then appending each one to the #tweets-container */
   const renderTweets = (tweets) => {
@@ -54,8 +52,7 @@ $(document).ready(function() {
   
   // renderTweets(tweetData); // Removed because tweets will be loaded dynamically through the API
 
-
-/* Responsible for fetching tweets from the /tweets page.
+  /* Responsible for fetching tweets from the /tweets page.
   -- It should be requesting and handling 
   a JSON response instead of an HTML response */ 
   const loadTweets = () => {
@@ -66,10 +63,9 @@ $(document).ready(function() {
     })
   };
 
-
-/* Add an event listener that listens for the *submit* event and
-prevents the default behaviours: data submission & page refresh.
-Create an AJAX post request that sends the serialized data to the server. */
+  /* Add an event listener that listens for the *submit* event and
+  prevents the default behaviours: data submission & page refresh.
+  Create an AJAX post request that sends the serialized data to the server. */
   $("#form-id").submit(function(event) {
     event.preventDefault();
     const $form = $(this).serialize();
@@ -82,8 +78,8 @@ Create an AJAX post request that sends the serialized data to the server. */
       
     } else {
       $.post("/tweets", $form).done(function() {
-        
         loadTweets();
+        $("#form-id").trigger("reset");
       })
     }
   });
