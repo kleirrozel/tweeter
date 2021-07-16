@@ -17,12 +17,12 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
-!["Tweeter Demo"](https://github.com/kleirrozel/tweeter/blob/master/docs/Tweeter-Demo.gif?raw=true)
+!["Tweeter Sending Tweets"](https://github.com/kleirrozel/tweeter/blob/master/docs/Sending-Tweets.gif?raw=true)
+
+!["Tweeter Responsive Size"](https://github.com/kleirrozel/tweeter/blob/master/docs/Responsive-Size.gif?raw=true)
+
+!["Errors - Empty Tweet and Over the Character Limit"](https://github.com/kleirrozel/tweeter/blob/master/docs/Error-Messages.gif?raw=true)
 
 !["Screenshot of Tweets - Desktop Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/desktop-version.png?raw=true)
 
-!["Screenshot of Tweets - Smaller Screen Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/smaller-screen-version.png?raw=true)
-
-!["Screenshot of Error - Over Character Limit"](https://github.com/kleirrozel/tweeter/blob/master/docs/over-limit.png?raw=true)
-
-!["Screenshot of Error - Empty Form"](https://github.com/kleirrozel/tweeter/blob/master/docs/empty-tweet.png?raw=true)
+!["Screenshot of Tweets - Smaller or Mobile Screen Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/Mobile-Version.png?raw=true)
