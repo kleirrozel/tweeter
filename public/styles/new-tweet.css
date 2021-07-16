@@ -7,7 +7,6 @@
   display: flex;
   margin-top: .55em;
   margin-bottom: .1em;
-
 }
 
 .tweet-area-container {
@@ -29,7 +28,7 @@ textarea {
 .error-message {
   background-color: #cc3b3b;
   color: #FFFF;
-  height: auto;
+  height: 1.5em;
   padding: .10em;
 }
 
@@ -40,6 +39,8 @@ textarea {
 .error-message::before {
   content: "\f06a";
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-left: .5em;
@@ -68,11 +69,8 @@ textarea {
 /* Desktop Version */
 @media only screen and (min-width: 96em){
   .new-tweet {
-    float: right;
-    flex-wrap: wrap;
-    position: sticky;
-    margin-top: 7.5em;
+    display: flex;
+    flex-direction: column;
     margin-left: 20em;
-    min-width: 40em;
   }
 }
