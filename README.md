@@ -15,3 +15,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+!["Tweeter Demo"](https://github.com/kleirrozel/tweeter/blob/master/docs/Tweeter-Demo.gif?raw=true)
+
+!["Screenshot of Tweets - Desktop Version"](https://github.com/kleirrozel/tweeter/blob/master/docs/desktop-version.png?raw=true)
+
+!["Screenshot of Error - Over Character Limit"](https://github.com/kleirrozel/tweeter/blob/master/docs/over-limit.png?raw=true)
+
+!["Screenshot of Error - Empty Form"](https://github.com/kleirrozel/tweeter/blob/master/docs/empty-tweet.png?raw=true)
